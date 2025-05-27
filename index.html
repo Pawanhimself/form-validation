@@ -22,7 +22,7 @@
           <span id="emailError"></span>
             <br><br>
           <label for="phoneno"><b>Phone Number</b></label>
-          <input type="number" placeholder="Enter Phone Number" name="phoneno" id="phoneno" required>
+          <input type="number" maxlength="10" oninput="this.value = this.value.replace(/\D/g, '').slice(0, 10)" placeholder="Enter 10-digit phone number" name="phoneno" id="phoneno" required>
           <span id="numberError"></span>
        
           <br><br>
