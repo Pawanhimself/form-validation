@@ -47,6 +47,7 @@ $('button').click(function(){
 //hiding all error when user enter the value to input field
 $('input').on('input', function() {
         $('span').html(' ');
+        $('#successMessage').empty();
         isError=false;
 });
 
